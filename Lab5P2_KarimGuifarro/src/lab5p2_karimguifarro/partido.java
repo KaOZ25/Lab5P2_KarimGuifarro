@@ -5,17 +5,13 @@
  */
 package lab5p2_karimguifarro;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Karim Ozael
  */
-public class Lab5P2_KarimGuifarro {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+public class partido {
+    private String equipo_rival;
+    private ArrayList <jugador> jugadores;
 }
