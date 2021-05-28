@@ -10,16 +10,15 @@ package lab5p2_karimguifarro;
  * @author Karim Ozael
  */
 public class jugador extends persona{
-    
-    public jugador(String nombre, String apellido, String nacionalidad, int edad) {
-        super(nombre, apellido, nacionalidad, edad);
-    }
-    private int num_jugador;
+     private int num_jugador;
     private int partidos_jugados;
     private int cant_copas;
     private int cant_amarillas;
     private int cant_rojas;
     private int duracion_contrato;
+    public jugador(String nombre, String apellido, String nacionalidad, int edad) {
+        super(nombre, apellido, nacionalidad, edad);
+    }
 
     public jugador(int num_jugador, int partidos_jugados, int cant_copas, int cant_amarillas, int cant_rojas, int duracion_contrato, String nombre, String apellido, String nacionalidad, int edad) {
         super(nombre, apellido, nacionalidad, edad);
@@ -31,6 +30,7 @@ public class jugador extends persona{
         this.duracion_contrato = duracion_contrato;
     }
 
+ 
     public int getNum_jugador() {
         return num_jugador;
     }
@@ -81,7 +81,7 @@ public class jugador extends persona{
 
     @Override
     public String toString() {
-        return "jugador{" + "num_jugador=" + num_jugador + ", partidos_jugados=" + partidos_jugados + ", cant_copas=" + cant_copas + ", cant_amarillas=" + cant_amarillas + ", cant_rojas=" + cant_rojas + ", duracion_contrato=" + duracion_contrato + '}';
+        return super.toString() + "num_jugador=" + num_jugador + ", partidos_jugados=" + partidos_jugados + ", cant_copas=" + cant_copas + ", cant_amarillas=" + cant_amarillas + ", cant_rojas=" + cant_rojas + ", duracion_contrato=" + duracion_contrato +'}';
     }
     
     
